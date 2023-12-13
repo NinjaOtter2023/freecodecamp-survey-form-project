@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="styles.css">
+<title>Watch Buyer Survey</title>
+</head>
+<body>
+    <container>
+        <header>
+            <h2 id="title">Pretentious Watch Co.</h2>
+            <h3 id="subtitle"><span>Sucker </span>Client Satisfaction Survey</h3>
+            <p id="description">Please tell us about your preferences</p>
+        </header>
+        <form id="survey-form">
+        
+            <label for="f-name" id="name-label" >Enter your first name:</label>
+        
+            <input id="f-name" type="text" name="f-name" placeholder="First Name" required><br>
+            <label for="lname" id="lname-label">Enter your last name:</label>
+            <input id="lname" type="text" name="lname" placeholder="Last Name" required><br>
+            <label for="email" id="email-label">Your email</label>
+        
+            <input id="email" type="email" placeholder="you@email.com" required><br>
+            <label for="number" id="number-label">How many pretentious watches do you currently own?</label>
+            <input id="number" type="number" min="1" max="9" placeholder="9"><br>
+            <label for="num-worn" id="num-worn-label">And how many do you actually wear?</label>
+            <input id="num-worn" type="number" min="0" max="2" placeholder="2"><br>
+            <label for="dropdown" id="dropdown-label">Which of the following watch brands is your favorite?</label><br>
+            <select id="dropdown" name="dropdown">
+                <option value="I want a...">I want a...</option>
+                <option value="audemars piguet">Audemars Piguet</option>
+                <option value="breitling">Breitling</option>
+                <option value="corum">Corum</option>
+                <option value="jaeger lecoultre">Jaeger LeCoultre</option>
+                <option value="omega">Omega</option>
+                <option value="piaget">Piaget</option>
+                <option value="rolex">Rolex</option>
+                <option value="tag heuer">Tag Heuer</option>
+                <option value="Invicta">Invicta (Just kidding! IYKYK)</option>
+            </select>
+            
+
+            <section class="radio">
+                <p>For whom was your most recent watch purchase?</p>
+                <label for="myself" id="myself-label">Myself</label>
+                <input type="radio" id="myself" name="bought-for" value="myself"><br>
+                <label for="gift" id="gift-label">A gift</label>
+                <input type="radio" id="gift" name="bought-for" value="gift">
+            </section>
+
+            <section class="checkbox">
+                <p>Why do you buy pretentious watches? Please select all that apply:</p>
+                <input type="checkbox" id="reason1" name="reason1" value="Craftmanship/Quality">
+                <label for="reason1">Craftsmanship</label><br>
+
+                <input type="checkbox" id="reason2" name="reason2" value="Prestige">
+                <label for="reason2">Prestige</label><br>
+
+                <input type="checkbox" id="reason3" name="reason3" value="Status Symbol">
+                <label for="reason3">Status symbol</labe"l><br>
+
+                <input type="checkbox" id="reason4" name="reason4" value="Workplace Perception">
+                <label for="reason4">Workplace/Career Image</label><br>
+
+                <input type="checkbox" id="reason5" name="reason5" value="Investment">
+                <label for="reason5">Investment</label><br>
+
+                <input type="checkbox" id="reason6" name="reason6" value="To fill the emptiness inside me">
+                <label for="reason6">To fill the empty hole inside me</label><br>
+                <br>
+                <label for="comments">Additional comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="35"></textarea>
+
+            </section>
+
+            <button id="submit">Submit</button>
+
+        </form>
+    </container>
+</body>

@@ -1,0 +1,47 @@
+body {
+    background-color: #3D405B;
+    align-items: center;
+}
+
+header {
+    background-color: #EFEFBD;
+    border:  2px solid #11060f;
+}
+
+h2 {
+    font-family:'Cinzel Decorative', serif;
+    font-size: 36px;
+    color: #270722;
+    text-align: center;
+    text-shadow: 2px 2px  5px gray;
+
+}
+h3 {
+    font-family: 'Parisienne', cursive;
+    font-size: 32px;
+    font-weight: 100;
+    text-align: center;
+}
+h3 > span {
+    text-decoration: line-through;
+}
+header > p {
+    font-family: 'Parisienne', cursive;
+    font-size: 24px;
+    text-align: center;
+}
+form {
+    color: #0B0B16;
+    background-color: #EFEFBD;
+    padding: 1rem;
+}
+#survey-form {
+    border: 2px solid #11060f
+}
+button {
+    background-color:#0B0B16;
+    color:beige;
+    border-radius: 50%;
+    padding: 16px;
+   
+}
